@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String githubSearchResults) {
             // COMPLETED (27) As soon as the loading is complete, hide the loading indicator
-            mProgressBar.setVisibility(View.VISIBLE);
+            mProgressBar.setVisibility(View.INVISIBLE);
             if (githubSearchResults != null && !githubSearchResults.equals("")) {
                 // COMPLETED (17) Call showJsonDataView if we have valid, non-null results
                 showJsonDataView();
