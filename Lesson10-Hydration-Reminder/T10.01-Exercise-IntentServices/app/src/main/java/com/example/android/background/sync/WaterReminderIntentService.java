@@ -35,5 +35,3 @@ public class WaterReminderIntentService extends IntentService {
         ReminderTasks.executeTask(this, action);
     }
 }
-
-

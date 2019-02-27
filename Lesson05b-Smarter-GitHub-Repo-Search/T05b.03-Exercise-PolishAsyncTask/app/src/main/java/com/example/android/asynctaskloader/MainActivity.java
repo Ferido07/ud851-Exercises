@@ -176,6 +176,8 @@ public class MainActivity extends AppCompatActivity implements
                     return;
                 }
 
+                // TODO (2) If mGithubJson is not null, deliver that result. Otherwise, force a load
+
                 /*
                  * When we initially begin loading in the background, we want to display the
                  * loading indicator to the user
@@ -196,7 +198,7 @@ public class MainActivity extends AppCompatActivity implements
                 String searchQueryUrlString = args.getString(SEARCH_QUERY_URL_EXTRA);
 
                 /* If the user didn't enter anything, there's nothing to search for */
-                if (searchQueryUrlString == null || TextUtils.isEmpty(searchQueryUrlString)) {
+                if (TextUtils.isEmpty(searchQueryUrlString)) {
                     return null;
                 }
 

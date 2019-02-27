@@ -43,7 +43,7 @@ public class NotificationUtils {
         }
         // COMPLETED (10) In the remindUser method use NotificationCompat.Builder to create a notification
         // that:
-        // - has a color of R.colorPrimary - use ContextCompat.getColor to get a compatible color
+        // - has a color of R.color.colorPrimary - use ContextCompat.getColor to get a compatible color
         // - has ic_drink_notification as the small icon
         // - uses icon returned by the largeIcon helper method as the large icon
         // - sets the title to the charging_reminder_notification_title String resource
